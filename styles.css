@@ -1,6 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
+  overflow-x: hidden;
 }
 
 body {
@@ -11,6 +15,17 @@ body {
   align-items: center;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+p {
+  font-family: "Dosis", sans-serif;
+}
 nav {
   background-color: rgb(84, 84, 236);
   width: 100%;
@@ -36,6 +51,11 @@ nav ul {
   align-items: center;
   background-color: none;
 }
+
+nav ul li {
+  list-style: none;
+}
+
 nav ul li a {
   color: blanchedalmond;
   list-style: none;
@@ -51,7 +71,7 @@ nav ul li a:hover {
 .hero {
   background-image: url("./images/luis-villasmil-GUs2qEeUSEE-unsplash.jpg");
   width: 100%;
-  height: 50vh;
+  height: 55vh;
   object-position: center;
   object-position: cover;
   display: flex;
@@ -98,6 +118,9 @@ nav ul li a:hover {
   border-radius: 5px;
 }
 
+.container {
+  width: 100%;
+}
 .programs {
   text-align: center;
   width: 100%;
@@ -133,25 +156,10 @@ nav ul li a {
   padding-left: 0.2rem;
 }
 
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 40px;
-  background-color: black;
-  color: blanchedalmond;
-}
-
-footer h1,
-h2 {
-  font-size: 16px;
-  color: blanchedalmond;
-  text-align: center;
-}
-
-.servies {
-  width: 100%;
+.services {
+  margin: 4em auto 2rem;
+  padding: 1rem;
+  width: 90%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1rem;
@@ -159,25 +167,118 @@ h2 {
 .card {
   height: 300px;
   color: rgb(21, 22, 22);
-  background-color: rgb(157, 188, 219);
+  background-color: rgb(250, 253, 255);
   border-radius: 10px;
-  padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow: hidden;
+  box-shadow: 1px 2px 0.5rem rgba(0, 0, 0, 0.2);
 }
 
 .card img {
+  height: 40%;
   max-height: 40%;
-  background-color: rgb(106, 109, 109);
+  background-color: rgb(88, 104, 104);
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
 }
-
+.card .body {
+  min-height: 60%;
+}
 .card h1 {
   max-width: 90%;
   margin: 1rem auto;
+  color: rgb(128, 128, 226);
 }
 
 .card p {
   max-width: 90%;
-  margin: 0 auto;
+  margin: 1rem auto;
+  color: rgb(82, 82, 151);
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(253, 253, 253);
+  padding: 3rem 0;
+}
+
+.info .upper,
+.info .lower {
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem auto;
+}
+.info .lower {
+  flex-direction: row-reverse;
+}
+.info .content {
+  max-width: 40%;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info .content p {
+  line-height: 1.6;
+  color: rgb(82, 82, 78);
+  font-size: 18px;
+}
+.info img {
+  width: 350px;
+  max-height: 400px;
+  object-fit: cover;
+  object-position: center;
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
+}
+
+.teams {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  margin: 2rem auto;
+}
+.teams .user {
+  border-radius: 5px 10px 5px 20px;
+  margin-left: 1rem;
+}
+.teams img {
+  max-height: 300px;
+}
+
+.teams .user-info {
+  padding: 0.7rem 0.5rem;
+}
+
+.teams .user-info h2 {
+  text-align: left;
+  color: rgb(70, 127, 252);
+}
+
+.teams .user-info p {
+  text-align: left;
+
+  color: rgb(76, 87, 112);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  background-color: black;
+  color: blanchedalmond;
+}
+
+footer h1,
+h2 {
+  font-size: 18px;
+  color: rgb(156, 153, 148);
+  text-align: center;
 }
