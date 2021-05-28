@@ -21,6 +21,8 @@ h3,
 h4,
 h5 {
   font-family: "Noto Sans JP", sans-serif;
+  margin: 1rem;
+  color: rgb(121, 128, 233);
 }
 
 p {
@@ -30,10 +32,13 @@ nav {
   background-color: rgb(84, 84, 236);
   width: 100%;
   height: 60px;
-  padding: 0 2rem;
+  padding: 0 3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0; /* required */
 }
 
 span {
@@ -41,13 +46,14 @@ span {
   font-size: 1.5rem;
   letter-spacing: 1px;
   width: 100%;
+  /* height: 100%; */
 }
 
 nav ul {
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   background-color: none;
 }
@@ -59,8 +65,9 @@ nav ul li {
 nav ul li a {
   color: blanchedalmond;
   list-style: none;
-  padding-left: 0.6rem;
+  padding-left: 0.8rem;
   letter-spacing: 1px;
+  text-decoration: none;
 }
 
 nav ul li a:hover {
@@ -71,7 +78,7 @@ nav ul li a:hover {
 .hero {
   background-image: url("./images/luis-villasmil-GUs2qEeUSEE-unsplash.jpg");
   width: 100%;
-  height: 55vh;
+  height: 60vh;
   object-position: center;
   object-position: cover;
   display: flex;
@@ -79,6 +86,7 @@ nav ul li a:hover {
   justify-content: center;
   align-items: center;
   background-position: center;
+  background-color: rgb(127, 125, 207);
 }
 
 .hero h1 {
@@ -120,40 +128,61 @@ nav ul li a:hover {
 
 .container {
   width: 100%;
+  padding: 1rem 0;
+  min-height: 85vh;
+  text-align: center;
 }
 .programs {
   text-align: center;
-  width: 100%;
-  margin: 2rem;
-  min-height: calc(100vh - 60px);
-}
-
-.programs ul {
-  background-color: rgb(253, 255, 255);
   width: 50%;
   margin: 2rem auto;
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: -1px 2px 0.5rem rgba(0, 0, 0, 0.2);
+  background-color: rgb(118, 157, 235);
+  color: white;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  padding: 1rem;
 }
 
-.programs ul li {
-  margin: 0.4rem 0;
-  background-color: rgb(216, 216, 221);
-  list-style: none;
-  transition: 0.3s all ease-in-out;
-  border-radius: 2px;
-  padding: 2px 6px;
+.programs h1 {
+  margin: 0;
+  text-transform: capitalize;
+  font-size: 1.2rem;
   text-align: left;
+  margin-bottom: 0.5rem;
+  color: aliceblue;
 }
-nav ul li a {
-  width: 100%;
+
+.programs p {
+  line-height: 1.6;
+  text-align: left;
+  color: rgb(145, 141, 141) 2;
+}
+
+.programs .form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 1rem 0;
+}
+.programs input {
+  width: 70%;
   color: white;
-  text-decoration: none;
+  padding: 14px 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
 }
-.programs ul li:hover {
-  background-color: rgb(201, 201, 228);
-  padding-left: 0.2rem;
+.programs button {
+  padding: 12px 10px;
+  border-radius: 10px;
+  margin-left: 1rem;
+  color: rgb(47, 82, 151);
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  border: none;
+  outline: none;
 }
 
 .services {
@@ -236,12 +265,15 @@ nav ul li a {
   clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
 }
 
+.teams-container {
+  margin: 2rem auto;
+  text-align: center;
+}
 .teams {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 2rem 0;
-  margin: 2rem auto;
 }
 .teams .user {
   border-radius: 5px 10px 5px 20px;
@@ -249,6 +281,9 @@ nav ul li a {
 }
 .teams img {
   max-height: 300px;
+  min-width: 300px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .teams .user-info {
@@ -264,6 +299,104 @@ nav ul li a {
   text-align: left;
 
   color: rgb(76, 87, 112);
+}
+
+form {
+  width: 400px;
+  height: 400px;
+  background-color: #fff;
+  box-shadow: 1px 2px 0.5rem rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+}
+
+form input {
+  padding: 10px 16px;
+  border-radius: 5px;
+  margin-bottom: 0.4rem;
+  width: 90%;
+  margin: 1rem auto;
+}
+
+form .btn {
+  width: 90%;
+  margin: 1rem auto;
+  background-color: rgb(70, 127, 252);
+  color: #fff;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  border: none;
+  outline: none;
+}
+
+/* Contact  */
+.contact {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  align-items: center;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin: 2rem auto;
+  color: rgb(121, 128, 233);
+}
+.contact span {
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1px;
+  color: rgb(32, 31, 31);
+  padding-left: 1rem;
+}
+
+.contact ul {
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 5rem;
+  border-radius: 10px;
+}
+
+.contact ul li {
+  padding: 1rem 0;
+  font-style: italic;
+  color: rgb(82, 84, 85);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.contact ul li a {
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* About  */
+.about {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  max-width: 70%;
+  min-height: calc(100vh - 60px);
+}
+.about h2 {
+  font-size: 2rem;
+  margin: 2rem auto;
+  color: rgb(121, 128, 233);
+}
+
+.about p {
+  max-width: 80%;
+  margin: 2rem auto;
+  line-height: 1.6;
+  color: rgb(54, 54, 54);
+  font-size: 1.3rem;
 }
 
 footer {
