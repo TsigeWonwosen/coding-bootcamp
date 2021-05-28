@@ -1,159 +1,162 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
 }
 
-body{
-    background-color: rgb(238, 237, 241);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-   
-}
-    
-nav{
-   background-color: rgb(84, 84, 236);
-   width: 100%;
-   height: 60px;
-    padding: 0 2rem;
-   display: flex;
-   justify-content: space-between;
-    align-items: center;
+body {
+  background-color: rgb(238, 237, 241);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-span{
-    color: rgb(252, 252, 252);
+nav {
+  background-color: rgb(84, 84, 236);
+  width: 100%;
+  height: 60px;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+span {
+  color: rgb(252, 252, 252);
   font-size: 1.5rem;
   letter-spacing: 1px;
   width: 100%;
-   
 }
 
-nav ul{
-    width: 100%;
-   display: flex;
-   flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: none ;
-   
+nav ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: none;
 }
 nav ul li a {
-    color: blanchedalmond;
-    list-style: none;
-    padding-left: 0.6rem;
-    letter-spacing: 1px;
-}
-    
-nav ul li a:hover{
-
-color: rgb(240, 194, 237);
-cursor: pointer;
+  color: blanchedalmond;
+  list-style: none;
+  padding-left: 0.6rem;
+  letter-spacing: 1px;
 }
 
-.hero{
-background-image: url("./images/luis-villasmil-GUs2qEeUSEE-unsplash.jpg");
-width: 100%;
-height: 50vh;
-object-position: center;
-object-position: cover;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-background-position: center;
+nav ul li a:hover {
+  color: rgb(240, 194, 237);
+  cursor: pointer;
 }
 
-.hero h1{
-color: rgb(252, 252, 252);
-width: 50%;
-text-align: left;
-margin: 1rem 0;
-font-size: 2.2rem;
-
+.hero {
+  background-image: url("./images/luis-villasmil-GUs2qEeUSEE-unsplash.jpg");
+  width: 100%;
+  height: 50vh;
+  object-position: center;
+  object-position: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
 }
 
-.hero p{
-width: 50%;
-text-align: left;
-color: rgb(228, 222, 222);
-font-size: 1.1rem;
-margin: 1rem 0;
-
+.hero h1 {
+  color: rgb(252, 252, 252);
+  width: 50%;
+  text-align: left;
+  margin: 1rem 0;
+  font-size: 2.2rem;
 }
 
+.hero p {
+  width: 50%;
+  text-align: left;
+  color: rgb(228, 222, 222);
+  font-size: 1.1rem;
+  margin: 1rem 0;
+}
 
-.hero .action-buttons{
-    width: 50%;
-    display: flex;
-    justify-content: flex-start;
-    }
-    
-.hero .action-buttons button{
-    width: auto;
-    padding:0.8rem 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 1rem;
-    background-color: rgba(69, 69, 223, 0.808);
-    color: white;
-    font-weight: bold;
-    border: none;
-    outline: none;
-    border-radius: 5px;
-    }
+.hero .action-buttons {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+}
 
-.programs{
-    text-align: center;
-    width: 100%;
-    margin: 2rem;
-    min-height: calc(100vh - 60px );
-    }
+.hero .action-buttons button {
+  width: auto;
+  padding: 0.8rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+  background-color: rgba(69, 69, 223, 0.808);
+  color: white;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
 
+.programs {
+  text-align: center;
+  width: 100%;
+  margin: 2rem;
+  min-height: calc(100vh - 60px);
+}
 
-.programs ul{
-   background-color: rgb(253, 255, 255);
-   width: 50%;
-   margin: 2rem auto;
-   padding: 2rem;
-   border-radius: 10px;
-   box-shadow: -1px 2px 0.5rem rgba(0,0,0,0.2);
+.programs ul {
+  background-color: rgb(253, 255, 255);
+  width: 50%;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: -1px 2px 0.5rem rgba(0, 0, 0, 0.2);
 }
 
 .programs ul li {
-    margin: 0.4rem 0;
-    background-color: rgb(216, 216, 221);
-    list-style: none;
-    transition: 0.3s all ease-in-out;
-    border-radius: 2px;
-    padding: 2px 6px;
-    text-align: left;
-
+  margin: 0.4rem 0;
+  background-color: rgb(216, 216, 221);
+  list-style: none;
+  transition: 0.3s all ease-in-out;
+  border-radius: 2px;
+  padding: 2px 6px;
+  text-align: left;
 }
-nav ul li a{
-width: 100%;
-color:white;
-text-decoration: none;
-    }
-.programs ul li:hover{
-     background-color: rgb(201, 201, 228);
-     padding-left: 0.2rem;
+nav ul li a {
+  width: 100%;
+  color: white;
+  text-decoration: none;
 }
-
-footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 40px;
-    background-color: black;
-    color: blanchedalmond;
+.programs ul li:hover {
+  background-color: rgb(201, 201, 228);
+  padding-left: 0.2rem;
 }
 
-footer h1, h2{
-    font-size: 16px;
-    color: blanchedalmond;
-    text-align: center;
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  background-color: black;
+  color: blanchedalmond;
+}
+
+footer h1,
+h2 {
+  font-size: 16px;
+  color: blanchedalmond;
+  text-align: center;
+}
+
+.servies {
+  display: grid;
+  grid-template-columns: repeat(aut-fit, minmax(250px, 1fr));
+
+  gap: 1rem;
+}
+.card {
+  height: 300px;
+  color: rgb(239, 243, 247);
 }
