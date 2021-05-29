@@ -43,7 +43,8 @@ nav {
 
 span {
   color: rgb(252, 252, 252);
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  font-weight: bold;
   letter-spacing: 1px;
   width: 100%;
   /* height: 100%; */
@@ -78,7 +79,7 @@ nav ul li a:hover {
 .hero {
   background-image: url("./images/luis-villasmil-GUs2qEeUSEE-unsplash.jpg");
   width: 100%;
-  height: 60vh;
+  height: 70vh;
   object-position: center;
   object-position: cover;
   display: flex;
@@ -87,6 +88,7 @@ nav ul li a:hover {
   align-items: center;
   background-position: center;
   background-color: rgb(127, 125, 207);
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
 }
 
 .hero h1 {
@@ -197,7 +199,7 @@ nav ul li a:hover {
   height: 300px;
   color: rgb(21, 22, 22);
   background-color: rgb(250, 253, 255);
-  border-radius: 10px;
+  border-radius: 5px 30px 5px 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -233,6 +235,7 @@ nav ul li a:hover {
   align-items: center;
   background-color: rgb(253, 253, 253);
   padding: 3rem 0;
+  clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
 }
 
 .info .upper,
@@ -276,8 +279,9 @@ nav ul li a:hover {
   padding: 2rem 0;
 }
 .teams .user {
-  border-radius: 5px 10px 5px 20px;
+  border-radius: 5px 30px 5px 20px;
   margin-left: 1rem;
+  background-color: white;
 }
 .teams img {
   max-height: 300px;
@@ -291,14 +295,24 @@ nav ul li a:hover {
 }
 
 .teams .user-info h2 {
+  margin: 0;
   text-align: left;
-  color: rgb(70, 127, 252);
+  color: rgb(124, 157, 228);
 }
 
 .teams .user-info p {
   text-align: left;
 
   color: rgb(76, 87, 112);
+}
+
+.login {
+  min-height: 82vh;
+}
+.login form h2 {
+  font-size: 2rem;
+  margin: 2rem auto;
+  color: rgb(121, 128, 233);
 }
 
 form {
@@ -404,9 +418,10 @@ footer {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 60px;
+  height: 100px;
   background-color: black;
   color: blanchedalmond;
+  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
 }
 
 footer h1,
